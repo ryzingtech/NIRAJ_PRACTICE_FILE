@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Number</title>
+</head>
+<body>
+<label>First Number</label>
+<input type="text" id="fn"><br>
+<label>Second Number</label>
+<input type="text" id="sn"><br>
+<p id="demo"></p><br>
+<input type="submit" value="Compare" onclick="com()">
+<script>
+function com()
+{
+let fn=document.getElementById("fn").value;
+let sn=document.getElementById("sn").value;
+if(fn>sn)
+{
+document.getElementById("demo").innerHTML="First Number is Greater than Second Number";
+}
+else if(fn<sn)
+{
+document.getElementById("demo").innerHTML="First Number is smaller than Second Number";
+}
+else if(fn==sn)
+{
+document.getElementById("demo").innerHTML="First Number equal to Second Number";
+}
+}
+</script>
+</body>
+</html>

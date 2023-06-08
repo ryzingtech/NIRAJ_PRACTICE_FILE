@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+.s{
+margin-left: 300px;
+background-color: rgba(35, 161, 199, 0.493);
+border-radius: 15px;
+margin-right: 290px;
+
+}
+#b{
+    width: 160px;
+    margin-left: 80px;
+}
+h2{
+    text-align: center;
+}
+#n1{
+    background-color: rgba(240, 248, 255, 0.295);
+    border-radius: 7px;
+}
+#n2{
+    background-color: rgba(240, 248, 255, 0.089);
+    border-radius: 7px;
+}
+#b{
+    border-radius: 7px;
+    background-color:  rgba(240, 248, 255, 0.089);
+}
+    </style>
+    <title>Sum</title>
+</head>
+
+<body><div class="s">
+    <h2 >Sum Of Natural Number</h1>
+    <label>Enter a Number:</label><input type="text" id="n1" width="190px" ><br><br><br>
+    <label> Your Result is:</label> <input type="text" id="n2" width="190px">
+  <br> <br> <input type="submit" id="b" onclick="calci()"></div>
+    <script>
+        function calci() {
+
+            let x = document.getElementById("n1").value;
+            let z = Number(x) - 1;
+            for (let i = z; i >= 1; i--) {
+                x = Number(x) + Number(i);
+
+            }
+            document.getElementById("n2").value = x;
+        }
+
+    </script>
+</body>
+
+</html>

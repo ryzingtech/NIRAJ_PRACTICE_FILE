@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+</head>
+<body>
+    <label >Enter Age</label><input type="text" id="p1">
+    <input type="submit" value="Compare" onclick="com()">
+    <p id="demo"></p>
+    <script>
+        function com()
+{
+let p1=document.getElementById("p1").value;
+if (12>p1) {
+    document.getElementById("demo").innerHTML="$5";   
+}
+else if (12<p1 & 18>p1){
+    document.getElementById("demo").innerHTML="$8";    
+}
+else{
+    document.getElementById("demo").innerHTML="$10"; 
+}
+}
+    </script>
+</body>
+</html>
